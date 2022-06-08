@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Data.Entity;
+using System.Windows.Forms;
 
 namespace LapBigSchool_PhamQuocVuong.Models
 {
@@ -15,6 +17,11 @@ namespace LapBigSchool_PhamQuocVuong.Models
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+        }
+
+        public static implicit operator ApplicationContext(ApplicationDbContext v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

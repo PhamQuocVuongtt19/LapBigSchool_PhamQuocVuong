@@ -56,6 +56,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -187,6 +188,10 @@
     <Compile Include="Migrations\202206010633585_PopulateCategoryTable.designer.cs">
       <DependentUpon>202206010633585_PopulateCategoryTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206080633184_AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\202206080633184_AddNameColumnToApplicationUser.designer.cs">
+      <DependentUpon>202206080633184_AddNameColumnToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -283,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206010633585_PopulateCategoryTable.resx">
       <DependentUpon>202206010633585_PopulateCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206080633184_AddNameColumnToApplicationUser.resx">
+      <DependentUpon>202206080633184_AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
